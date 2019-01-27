@@ -21,7 +21,7 @@ src/
 |  |- index.js        entry point for this page
 ```
 
-Site live [Here](https://jf-g-photo.netlify.com/)
+Site live [Here](https://gllmt-wishes-2019.netlify.com/)
 
 
 Enjoy coding 👋 
