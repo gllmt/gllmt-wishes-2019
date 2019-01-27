@@ -1,0 +1,13 @@
+version: "3"
+services:
+  dev:
+    build: .
+    volumes:
+      - fan-sync:/usr/src/app:nocopy
+    working_dir: /usr/src/app/
+    command: yarn dev
+    ports:
+      - "8080:8080"
+volumes:
+  fan-sync:
+    external: true
