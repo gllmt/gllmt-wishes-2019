@@ -21,6 +21,29 @@ src/
 |  |- index.js        entry point for this page
 ```
 
+### Install 
+
+```
+yarn -i
+```
+
+or 
+
+```
+npm install
+```
+
+### Dev & Build
+
+```
+yarn dev
+```
+
+````
+yarn build
+````
+
+
 Site live [Here](https://gllmt-wishes-2019.netlify.com/)
 
 
