@@ -157,6 +157,71 @@ body {
   mix-blend-mode: difference;
   pointer-events: none;	
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1%
+}
+
+.wrapper-links {
+    position: absolute;
+    top: 1%;
+    left: 1%
+}
+
+.btn-bloc {
+    position: relative;
+    text-decoration: none;
+    display: inline-block
+  }
+  
+  .btn {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    height: 100%;
+    padding: 0
+  }
+  
+  .btn:after {
+    content: '';
+    display: block;
+    position: absolute
+  }
+  
+  .btn:before {
+    content: '';
+    display: block;
+    position: absolute
+  }
+  
+  .btn-line:after {
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.55, 0, .1, 1);
+    transition: -webkit-transform .6s cubic-bezier(.55, 0, .1, 1);
+    transition: transform .6s cubic-bezier(.55, 0, .1, 1);
+    transition: transform .6s cubic-bezier(.55, 0, .1, 1), -webkit-transform .6s cubic-bezier(.55, 0, .1, 1)
+  }
+  
+  .btn-line:hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.55, 0, .1, 1);
+    transition: -webkit-transform .6s cubic-bezier(.55, 0, .1, 1);
+    transition: transform .6s cubic-bezier(.55, 0, .1, 1);
+    transition: transform .6s cubic-bezier(.55, 0, .1, 1), -webkit-transform .6s cubic-bezier(.55, 0, .1, 1)
+  }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
