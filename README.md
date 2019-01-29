@@ -1,6 +1,6 @@
 # Webpack 4 Static Wishes 2019 Gllmt Website
 
-Experiments with [Matter](http://brm.io/matter-js/)
+Experiments with [MatterJS](http://brm.io/matter-js/)
 
 
 Using [webpack 4](https://webpack.js.org) with [POSTCSS](https://github.com/postcss/postcss) to build website.
