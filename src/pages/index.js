@@ -53,11 +53,11 @@ const createShape = function (x, y) {
     };
 };
 
-let newYear = Bodies.rectangle(w/2, h/2, Math.min(w/2.4), Math.min(h/4.7),{
+let newYear = Bodies.rectangle(w / 2, h / 2, Math.min(w / 2.4), Math.min(h / 4.7), {
   isStatic: true,
         render: {
         sprite: {
-          texture: "https://wishes-2019.superhi.com/outline-2019.png",
+          texture: 'https://wishes-2019.superhi.com/outline-2019.png',
           xScale: 0.5,
           yScale: 0.5
         }
@@ -75,7 +75,20 @@ if (w < 768) {
         }
       }
 	})
-};
+}else if (w > 1500) {
+  newYear = Bodies.rectangle(w / 2, h / 2, Math.min(w / 5), Math.min(h / 4.7), {
+    isStatic: true,
+          render: {
+          sprite: {
+            texture: 'https://wishes-2019.superhi.com/outline-2019.png',
+            xScale: 0.5,
+            yScale: 0.5
+          }
+        }
+  });
+}
+console.log(w)
+console.log(Math.min(w / 5.5))
 
 const wallOptions = {
     isStatic: true,
@@ -117,7 +130,7 @@ document.addEventListener("click", function (event) {
   const shape = createShape(event.pageX, event.pageY)
   World.add(engine.world, shape)
 });
-// when we touch : 
+// when we touch :
 // when we click the page, add a new shape
 document.addEventListener("touchstart", function (event) {
   const shape = createShape(event.pageX, event.pageY)
@@ -133,6 +146,10 @@ window.addEventListener("deviceorientation", function (event) {
   engine.world.gravity.y = event.beta / 30
 });
 
+// funny console.log :
+console.log("%cHello Developer ✌️", 'color:#fff; background-color:#000; padding:5px 10px; font-size:14px;');
+console.log("%cSee More here : 'https://github.com/gllmt/gllmt-wishes-2019'", 'color:#fff; background-color:#000; padding:5px 10px; font-size:14px;');
+console.log("%c This project is just an experiment for fun, thanks for your interest 🙂", 'color:#fff; background-color:#000; padding:5px 10px; font-size:14px;');
 
 // ServiceWorker PWA : 
 (function () {
