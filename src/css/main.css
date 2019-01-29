@@ -146,6 +146,12 @@ body {
 	background-color: #ffffff;
 	color: #000000;
 }
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1%;
+    mix-blend-mode: difference;
+}
 
 .split {
   position:  fixed;
@@ -155,13 +161,12 @@ body {
   height: 100%; 
   background-color: white;
   mix-blend-mode: difference;
-  pointer-events: none;	
+  pointer-events: none;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    margin-right: 1%
+.split .wrapper-links {
+    right: 1%;
+    left: auto;
 }
 
 .wrapper-links {

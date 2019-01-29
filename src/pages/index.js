@@ -87,8 +87,6 @@ if (w < 768) {
         }
   });
 }
-console.log(w)
-console.log(Math.min(w / 5.5))
 
 const wallOptions = {
     isStatic: true,
